@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepti project</title>
+</head>
+<body>
+    <div style="height: 60px; width:100vw; background:white;z-index:3;position:fixed">
+        <div style="display: flex; width:100%; justify-content:center;color:red;font-weight:bold; align-items:center;font-family:sans-serif; height:100%;font-size:30px">
+            Netflix DataAnalysis
+        </div>
+    </div>
+    <div style="height: 100vh; width:200px; background:white; z-index:4; position: fixed;border-right:1px solid black">
+        <div style="width: 100%; display:flex;flex-direction:column; gap:20px; padding: 10px;">
+            <div style="color:red;font-weight:bold;font-family:sans-serif;font-size:20px">NetFlix</div>
+            <div style="color: black; padding:0px;background:white;overflow:hidden;width:180px"><a href="{% url 'home' %} " style="text-decoration: none;color:black;font-weight:900; font-family:sans-serif;">Home</a></div>
+            <div style="color: black; padding:0px;background:white;overflow:hidden;width:180px"><a href="{% url 'index' %}" style="text-decoration: none;color:black;font-weight:900; font-family:sans-serif;">Netflix Analysis</a></div>
+        </div>
+    </div>
+    <div style="margin-left: 200px; padding: 0px;padding-top:60px">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>
